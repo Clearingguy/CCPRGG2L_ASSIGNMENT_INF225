@@ -40,6 +40,15 @@ public class App {
 
     for (int i = 0; i < itemArray.length; i++){
         itemArray[i].showItemName();
+
+     
+        Fish Goldfish = new Fish();
+
+        Goldfish.eat();
+
+        Tiger Tiger = new Tiger();
+        Tiger.walk();
+        Tiger.run();
     }
-}
+    }
 }
