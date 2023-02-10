@@ -1,6 +1,8 @@
 public class App {
     public static void main (String[] args) throws Exception{
 
+    
+
     GroceryItem item1 = new GroceryItem();
     item1.name = "Tissue";
     item1.price = 50;
@@ -29,5 +31,15 @@ public class App {
 
     c1.showItemPrice(item2);
     c1.showItemPrice(item3);
+
+    System.out.println();
+    
+    GroceryItem[] itemArray = new GroceryItem[2];
+        itemArray[0] = item2;
+        itemArray[1] = item3;
+
+    for (int i = 0; i < itemArray.length; i++){
+        itemArray[i].showItemName();
+    }
 }
 }
